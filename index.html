@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="container">
-  <h1>Hey Neighbor, make that a number a beep boop!</h1>
+  <h1>Hey Neighbor, turn those numbers into beep boops!</h1>
     <div class= "giffies">
       <!-- <img src="img/hididdly.gif" alt="a picture of Ned Flanders Flandering">
       <img src="img/swamming.gif" alt="a picture of Mr. Rogers Swamming">
@@ -22,8 +22,16 @@
         <input class="form-control-lg" type="text" id="userNumbers" name="userNumbers" required>
       </div>
     
-
-    <button type="submit" class="btn btn-block"><strong><span style="color:black" class="animated pulse animatespan">submit</span></strong></button> 
+      <button type="submit" class="btn btn-block" id="submit"><strong><span style="color:black" class="animated pulse animatespan">submit</span></strong></button> 
+      <button type="reset" class="btn btn-block" id="reset"><strong><span style="color:black" class="animated pulse animatespan">reset</span></strong></button>
+    
     </form>
+    <div class="computerinoed-numbers">
+      <p>Your encoded number sequence is as follows:<span id="conversions"></span>.</p>
+    </div>
+
+    <div id="biden">
+      <img src="img/biden.jpeg" alt="a photo of Joe Biden joe-bitin' on some ice cream">
+    </div>
 </div>  
 </body>

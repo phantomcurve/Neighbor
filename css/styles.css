@@ -1,6 +1,9 @@
 body {
   font-family:monospace;
   text-align: center;
+  background-image: url("img/swamming.gif");
+  background-repeat: repeat-y;
+  background-size: cover;
 }
 
 h1 {
@@ -11,10 +14,14 @@ h1 {
 
 h2 {
   background-color: lightskyblue;
+  margin: 30px;
+  padding: 15px;
 }
 
-.giffies {
-  background-image: url("img/hididdly.gif");
+p {
+  background-color:thistle;
+  margin: 30px;
+  padding: 15px;
 }
 
 #numberInput {
@@ -25,6 +32,8 @@ h2 {
   background-color: mediumpurple;
   width: 200px;
   margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
 	transform: scale(1);
   animation: pulse 3s infinite;
@@ -46,3 +55,9 @@ h2 {
       box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
     }
   }  
+
+  #biden {
+    display:none;
+  }
+
+ 
