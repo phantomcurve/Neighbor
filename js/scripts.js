@@ -15,17 +15,19 @@
 $(document).ready(function() {
   $("#submit").click(function() {
     $("#biden").show();
+    $(".computerinoed-numbers").show();
     event.preventDefault();
   });
   $("#reset").click(function() {
     $("#biden").hide();
-    $("form#userNumbers").reset();
+    $(".computerinoed-numbers").hide();
+    $("form#numberInput").reset();
     event.preventDefault();
   });
-  $("form#userNumbers").submit(function(event) {
+  $("form#numberInput").submit(function(event) {
     event.preventDefault();
-    
-    const numberArray = str.split("#userNumbers".val());
-    numberArray.push("#conversions");
+    let string = "#userNumbers".val();
+    let numberArray = string.split(" ");
+    $("#conversions").html(numberArray);
   });
 });  

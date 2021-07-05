@@ -56,8 +56,12 @@ p {
     }
   }  
 
-  #biden {
-    display:none;
-  }
+.computerinoed-numbers {
+  display: none;
+}
+
+#biden {
+    display: none;
+}
 
  
