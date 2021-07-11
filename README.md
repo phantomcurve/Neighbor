@@ -1,6 +1,6 @@
 # Neighbor Number
 
-#### This is a simple web app for converting a random number into a phrase if it includes the numbers 1, 2, or 3.
+#### This is a simple web app for converting portions of a random user-generated number (converted into an array including all preceding numbers) into a phrased string if/when the generated array includes the numbers 1, 2, or 3.
 
 #### By Tim Roth
 
@@ -26,24 +26,20 @@ This is a silly website that converts a user-generated number from 0-1000 into o
 ## Tests/Specs
 
 Describe: neighborNumber()
-Test: "It should create an array with values 0-1000."
-Expected outcome: [0,1,2,3,4,etc]
+Test: "It should create an array with user inputted number of values 0-user-inputted number."
+Expected outcome: [0,1,2,3,4,userinputtedNumber]
 
 Describe: neighborNumber()
-Test: "It should replace any numbers that include the number 1 with 'beep'."
-Expected outcome: "beep"
+Test: "It should replace any user numbers in the array that include the number 3 with 'Won't you be my neighbor?'."
+Expected outcome: [0,1,2,"Won't you be my neighbor?"]
 
 Describe: neighborNumber()
 Test: "It should replace any numbers that include the number 2 with 'boop'."
 Expected outcome: "boop"
 
 Describe: neighborNumber()
-Test: "It should replace any numbers that include the number 3 with 'Won't you be my neighbor?'."
-Expected outcome: "Won't you be my neighbor?"
-
-Describe: neighborNumber()
-Test: "It should create a sub-array with all numbers preceding the user-inputted number"
-Expected outcome: [0, 1, 2, 3, 4, 5, user-inputted number]
+Test: "It should replace any numbers that include the number 1 with 'beep'."
+Expected outcome: "beep"
 
 Describe: neighborNumber()
 Test: "It should loop through the array and return a string that has replaced all instances of the magic numbers with their corresponding word or phrase."

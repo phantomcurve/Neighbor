@@ -1,37 +1,39 @@
 // Business Logic
-function neighborNumber(start, end) {
-  return Array(end - start + 1).fill().map((_, idx) => start + idx)
-}
-const allNumbers = neighborNumber(0, 1000); // [9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+function neighborNumber(#userNumber) {
+  const userNumberArray = (#userNumber.toString([]);
+  for (let i = 0; i < userNumberArray; i+=1) {
+    if (userNumberArray.includes("3") {
+      userNumberArray.push("won't you be my neighbor?")
+    }
+    else if (userNumberArray.includes("2") {
+      userNumberArray.push("boop")
+    }
+    else if (userNumberArray.includes("1") {
+      userNumberArray.push("beep")
+    }
+    else (userNumberArray.includes("4, 5, 6, 7, 8, 9") {
+      userNumberArray.push(i)
+    }
+    return 
+  });
+  userNumberArray.join(" ");
+
+    
+const allNumbers = neighborNumber(0, 100); 
 
 
 
 // UI Logic
 
 $(document).ready(function() {
-  $("#submit").click(function() {
-    $("#biden").show();
-    $(".computerinoed-number").show();
-    event.preventDefault();
+  $("form#numberInput").submit(function(event) {
+    neighborNumber("input#userNumber").val();  
+      $(".computerinoed-number").show();
+        $("#biden").show();  
   });
-
   $("#reset").click(function() {
-    $("#biden").hide();
-    $(".computerinoed-number").hide();
     $("form#numberInput").reset();
     event.preventDefault();
   });
 
-  $("form#numberInput").submit(function(event) {
-    event.preventDefault();
-
-    let number = parseInt($("#userNumber").val());
-    //let numberArray = [number + int]
-    const magicNumber1 = new RegExp("1", "g");
-    const magicNumber2 = new RegExp("2", "g");
-    const magicNumber3 = new RegExp("3", "g");
-
-    String.replace(magicNumber1, "beep").replace(magicNumber2, "boop").replace(magicNumber3, "Won't you be my neighbor?");    
-  
-  });
 });  
