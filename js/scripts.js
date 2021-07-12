@@ -1,39 +1,40 @@
 // Business Logic
-function neighborNumber(#userNumber) {
-  const userNumberArray = (#userNumber.toString([]);
-  for (let i = 0; i < userNumberArray; i+=1) {
-    if (userNumberArray.includes("3") {
-      userNumberArray.push("won't you be my neighbor?")
+let userNumberArray = [];
+
+function neighborNumber(userNumber) {
+  
+  const userNumberString = userNumber.toString();
+  for (let i = 0; i <= userNumberString; i++) {
+    if (userNumberString.includes("3")) {
+      userNumberArray.push("Won't you be my neighbor?")
     }
-    else if (userNumberArray.includes("2") {
-      userNumberArray.push("boop")
+    else if (userNumberString.includes("2")) {
+      userNumberArray.push("Boop!")
     }
-    else if (userNumberArray.includes("1") {
-      userNumberArray.push("beep")
+    else if (userNumberString.includes("1")) {
+      userNumberArray.push("Beep!")
     }
-    else (userNumberArray.includes("4, 5, 6, 7, 8, 9") {
+    else {
       userNumberArray.push(i)
-    }
-    return 
-  });
-  userNumberArray.join(" ");
-
-    
-const allNumbers = neighborNumber(0, 100); 
-
-
+    } 
+  };
+  return userNumberArray;
+}
 
 // UI Logic
 
 $(document).ready(function() {
   $("form#numberInput").submit(function(event) {
-    neighborNumber("input#userNumber").val();  
-      $(".computerinoed-number").show();
-        $("#biden").show();  
-  });
-  $("#reset").click(function() {
-    $("form#numberInput").reset();
     event.preventDefault();
+    neighborNumber() 
+      $("input#userInputtedNumber").val();
+    }); 
+      $(".computerinoed-number").show();
+        $("#conversion").text(userNumberArray); 
   });
-
-});  
+  $("#reset").click(function(event) {
+    $("form#numberInput").reset();
+      $(".computerinoed-number").hide();
+    event.preventDefault();
+});
+  
